@@ -1,0 +1,36 @@
+<!-- ROW_START -->
+<div class="w-full h-full flex py-10">
+
+    <!-- LEFT_SECTION -->
+    <div
+      class="md:flex-1 w-full md:w-1/2 px-5 md:px-16 space-y-2 md:space-y-16 flex flex-col justify-center  items-center ">
+  
+      <div class="flex flex-col justify-center items-center md:items-start w-full">
+        <app-heading @slideInFromRightAndFade [bgColor]="headingColors.DEFAULT_GRADIENT" headingText="Software"></app-heading>
+        <app-heading @slideInFromRightAndFade [bgColor]="headingColors.DEFAULT_GRADIENT" headingText="Engineer"></app-heading>
+      </div>
+  
+      <div
+        class="flex w-full text-gray-400 md:pr-20 font-base text-lg md:text-2xl justify-center md:justify-start items-center">
+        <span @slideInFromRightAndFade class="text-center md:text-left">Currently developing 🚀 awesome maps
+          experiences  Google to help
+          everyday users navigate the world 🚆 😃 </span>
+      </div>
+  
+      <div class="flex w-full justify-center md:justify-start  items-center">
+  public fontSize = FontSize;
+        <app-custom-button @slideInFromRightAndFade (onBtnClicked)="goToDevProcess($event)" [size]="fontSize.LG" [bgColor]="customBtnColors.INDIGO600"
+          btnLabel="Get Started" [isIconActive]="true" iconType="RIGHT_ARROW" [iconSize]="IconSize.MD"
+          iconAnimation="animate-bounceX">
+        </app-custom-button>
+      </div>
+    </div>
+  
+    <!-- RIGHT_SECTION -->
+    <div class="md:flex-1 hidden w-1/2 justify-center items-center md:flex p-10">
+  
+      <img @fade hidden src="../../../assets/images/home__illustration.svg" alt="">
+  
+    </div>
+  </div>
+  
