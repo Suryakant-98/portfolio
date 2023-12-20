@@ -1,17 +1,17 @@
 <div class="w-full p-5 md:pt-16 md:pb-5 md:px-16 flex justify-between items-center">
-    <a routerLink="" class="text-white font-bold text-xl">
-      SURYAKANT V
+    <a  class="text-white font-bold text-xl">
+      &lt; SURYAKANT V /&gt;
     </a>
     <div class="group hidden md:flex md:space-x-12">
-      <a routerLink="" class="text-gray-400 font-semibold text-lg hover:text-white">
+      <a routerLink="" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" class="text-gray-400 font-semibold text-lg hover:text-white">
         Home
       </a>
   
-      <a routerLink="/about" class="text-gray-400 font-semibold text-lg hover:text-white">
+      <a routerLink="/about" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" class="text-gray-400 font-semibold text-lg hover:text-white">
         About
       </a>
   
-      <a routerLink="/projects" class="text-gray-400 font-semibold text-lg hover:text-white">
+      <a routerLink="/projects" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }" class="text-gray-400 font-semibold text-lg hover:text-white">
         Projects
       </a>
   
@@ -54,17 +54,7 @@
         Projects
       </a>
   
-      <a href="javascript:void(0)" (click)="navigateTo('Home')" [ngClass]="{'text-indigo-900': active === 'Blog'}"
-        class="flex flex-col space-y-1 text-gray-300 justify-center items-center cursor-pointer text-sm font-semibold ">
-        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
-            clip-rule="evenodd" />
-        </svg>
-        Blog
-      </a>
-  
-      <a href="javascript:void(0)" (click)="navigateTo('Contact')" [ngClass]="{'text-indigo-900': active === 'Blog'}"
+      <a href="javascript:void(0)" (click)="navigateTo('Contact')" [ngClass]="{'text-indigo-900': active === 'Contact'}"
         class="flex flex-col space-y-1 text-gray-300 justify-center items-center cursor-pointer text-sm font-semibold ">
         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path

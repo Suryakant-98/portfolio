@@ -1,6 +1,6 @@
 export enum SubHeadingColorClasses {
 
-    DEFAULT = "text-gray-600"
+    DEFAULT = "text-green-50"
 }
 
 export enum SubHeadingColors {

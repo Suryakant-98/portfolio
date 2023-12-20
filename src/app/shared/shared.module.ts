@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SubHeadingComponent } from './sub-heading/sub-heading.component';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
 import { ChipsComponent } from './chips/chips.component';
+import { ProcessInfoComponent } from './process-info/process-info.component';
 
 
 
@@ -18,7 +19,8 @@ import { ChipsComponent } from './chips/chips.component';
     NavbarComponent,
     SubHeadingComponent,
     CustomButtonComponent,
-    ChipsComponent
+    ChipsComponent,
+    ProcessInfoComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { ChipsComponent } from './chips/chips.component';
     HeadingComponent,
     IconComponent,
     CustomButtonComponent,
-    ChipsComponent
+    ChipsComponent,
+    ProcessInfoComponent
   ]
 })
 export class SharedModule { }

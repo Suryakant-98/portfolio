@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeSectionComponent {
 
+  goToDevProcess() {
+    const devProcessElement = document.getElementById("devProcess");
+    if (devProcessElement) {
+      devProcessElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
+
 }

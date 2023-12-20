@@ -10,12 +10,13 @@ import { DevProcessSectionComponent } from './dev-process-section/dev-process-se
 
 
 
+
 @NgModule({
   declarations: [
     HomeLandingSectionComponent,
     HomeSectionComponent,
     TechnologiesSectionComponent,
-    DevProcessSectionComponent
+    DevProcessSectionComponent,
   ],
   imports: [
     CommonModule,
