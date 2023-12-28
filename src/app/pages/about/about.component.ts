@@ -16,14 +16,8 @@ export class AboutComponent {
   public customBtnColors = CustomButtonColors;
   public fontSize = FontSize;
   public headingColors = HeadingColors;
+
   openResume(event: any) {
-    const url = 'assets/files/SURYAKANT.V-Resume.pdf';
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = url.split('/').pop() as string;
-    link.style.display = 'none';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open("assets/files/SURYAKANT-Resume.pdf", "_blank");
   }
 }
