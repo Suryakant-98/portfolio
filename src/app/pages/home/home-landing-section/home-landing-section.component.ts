@@ -26,4 +26,10 @@ export class HomeLandingSectionComponent {
   goToDevProcess(event: any): void {
     this.scrollToDevProcess.emit();
   }
+
+  home: Array<any> = [
+    {
+      details: 'I like to craft solid 💻 and scalable 🚀 frontend products with great user experience, visually appealing and high-performing digital experiences.'
+  }
+] 
 }

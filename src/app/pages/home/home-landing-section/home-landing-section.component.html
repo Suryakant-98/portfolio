@@ -10,10 +10,9 @@
         <app-heading @slideInFromRightAndFade [bgColor]="headingColors.DEFAULT_GRADIENT" headingText="Engineer"></app-heading>
       </div>
   
-      <div
+      <div *ngFor="let item of home"
         class="flex w-full text-gray-400 md:pr-20 font-base text-lg md:text-2xl justify-center md:justify-start items-center">
-        <span @slideInFromRightAndFade class="text-center md:text-left">I like to craft solid 💻 and scalable 🚀 frontend products 
-           with great user experience.</span> 
+        <span @slideInFromRightAndFade class="text-center md:text-left">{{item.details}}</span> 
       </div>
   
       <div class="flex w-full justify-center md:justify-start  items-center">
