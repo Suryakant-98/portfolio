@@ -1,0 +1,11 @@
+.custom-img {
+    width: 530px;
+    height: 330px;
+    margin-right: 60px;
+    margin-top: 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-img:hover {
+    transform: scale(1.1);
+}
