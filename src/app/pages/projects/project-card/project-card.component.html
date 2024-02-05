@@ -1,32 +1,62 @@
 <div
-    class="w-full bg-gray-800  shadow-2xl rounded-lg p-5 md:p-10 flex flex-col md:flex-row justify-between items-center">
+  class="w-full bg-gray-800 shadow-2xl rounded-lg p-5 md:p-10 flex flex-col md:flex-row justify-between items-center"
+>
+  <!-- PROJECT IMAGE   -->
+  <div class="flex w-full md:w-1/3 md:flex-1 justify-start items-center">
+    <img
+      class="rounded-lg shadow-2xl"
+      [src]="'assets/images/' + project.projectImg"
+      alt="Project Image"
+    />
+  </div>
 
+  <!-- PROJECT DESC WRAPPER -->
+  <div
+    class="w-full md:w-2/3 flex md:flex-1 flex-col py-3 md:py-0 space-y-5 justify-between"
+  >
+    <!-- PROJECT NAME -->
+    <span
+      class="flex w-full justify-end items-center font-semibold text-gray-200 text-4xl text-right"
+    >
+      {{ project.projectName }}
+    </span>
 
-    <!-- PROJECT IMAGE   -->
-    <div class="flex w-full md:w-1/3 md:flex-1 justify-start items-center ">
-        <img class=" rounded-lg shadow-2xl" [src]='"assets/images/" + project.projectImg' alt="Project Image">
+    <!-- PROJECT DESCRIPTION  -->
+    <span
+      class="flex w-fulljustify-end items-center text-gray-500 text-2xl text-right"
+    >
+      {{ project.projectDescription }}
+    </span>
+
+    <!-- BUTTON SECTION -->
+    <div class="flex w-full justify-end space-x-3 text-green-50 items-center">
+      <!-- PROJECT LIVE LINK -->
+      <app-custom-button
+        *ngIf="project.isProjectLinkPresent"
+        (onBtnClicked)="viewProject($event)"
+        [iconSize]="IconSize.MD"
+        [bgColor]="customBtnColors.INDIGO600"
+        btnLabel="View"
+        [isIconActive]="true"
+        iconType="VIEW"
+        [iconSize]="IconSize.LG"
+      >
+      </app-custom-button>
+
+      <!-- PROJECT GITHUB LINK -->
+      <app-custom-button
+        *ngIf="project.isProjectGithubLinkPresent"
+        (onBtnClicked)="viewGithubProject($event)"
+        [iconSize]="IconSize.MD"
+        [bgColor]="customBtnColors.GRAY900"
+        btnLabel="Github"
+        [isIconActive]="true"
+        iconType="GITHUB"
+        [iconSize]="IconSize.LG"
+      >
+      </app-custom-button>
+
+      <span *ngIf="project.softwareAvailable">Softwares Used: {{ project.softwaresUsed }}</span>
     </div>
-
-    <!-- PROJECT DESC WRAPPER -->
-    <div class="w-full md:w-2/3 flex md:flex-1 flex-col py-3 md:py-0 space-y-5 justify-between">
-
-        <!-- PROJECT NAME -->
-        <span class="flex w-full justify-end items-center font-semibold text-gray-200 text-4xl text-right">
-            {{project.projectName}}
-        </span>
-
-        <!-- PROJECT DESCRIPTION  -->
-        <span class="flex w-fulljustify-end items-center text-gray-500 text-2xl text-right">
-            {{project.projectDescription}}
-        </span>
-
-        <!-- BUTTON SECTION -->
-        <div class="flex  w-full justify-end space-x-3 text-green-50 items-center">
-
-            <span>Softwares Used: {{project.softwaresUsed}}</span>
-
-
-        </div>
-    </div>
+  </div>
 </div>
-
