@@ -23,6 +23,13 @@ export class ProjectSectionComponent {
       softwaresUsed: 'HTML, SCSS, Bootstrap, Typescript, Angular',
       softwareAvailable: true,
     },
+        {
+      projectImg: 'intel.png',
+      projectName: 'Intel - VDC',
+      projectDescription: 'The Validation DevOps Center (VDC) is a unified platform designed to support Intel employees across the entire enterprise validation value stream. It provides a holistic, all-connected approach to managing validation processes, allowing users to search, view, download, build, test, and deploy various ingredients such as software, firmware, and emulation for both pre-silicon and post-silicon validation use cases.',
+      softwaresUsed: 'HTML, SCSS, Bootstrap, Typescript, Angular',
+      softwareAvailable: true,
+    },
     {
       projectImg: 'vorwerk.png',
       projectName: 'Vorwerk DS Pro',
