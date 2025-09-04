@@ -18,6 +18,6 @@ export class AboutComponent {
   public headingColors = HeadingColors;
 
   openResume(event: any) {
-    window.open("../../../assets/files/Suryakant-Resume.pdf", "_blank")
+    window.open("../../../assets/files/SURYAKANT-Resume.pdf", "_blank")
   }
 }
